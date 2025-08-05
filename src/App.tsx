@@ -1,33 +1,40 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css'
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import CNav from './components/CNav'
-import Main from './components/Main';
-import CFooter from './components/CFooter';
-import { Container } from 'react-bootstrap';
-import Hero from './components/Hero';
-import Details from './components/Details';
-import About from './components/About';
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import CNav from "./components/CNav";
+import Main from "./components/Main";
+import CFooter from "./components/CFooter";
+import { Container } from "react-bootstrap";
+import Hero from "./components/Hero";
+import Details from "./components/Details";
+import About from "./components/About";
 
 function App() {
-
   return (
     <>
-<BrowserRouter>
-<Container fluid className="d-flex flex-column min-vh-100 p-0">
-      <CNav />
-      
-      <div id="main" className="flex-fill">
-      <Routes>
-        <Route path="/" element={<><Hero/><Main /></>} />
-        <Route  path="/details/:id" element={ <Details/>}/>
-        <Route path='/about' element={<About/>}/>
-      </Routes></div>
-      <CFooter/></Container>
-    </BrowserRouter>
+      <BrowserRouter>
+        <Container fluid className="d-flex flex-column min-vh-100 p-0">
+          <CNav />
+          <div id="main" className="flex-fill">
+            <Routes>
+              <Route
+                path="/"
+                element={
+                  <>
+                    <Hero />
+                    <Main />
+                  </>
+                }
+              />
+              <Route path="/details/:id" element={<Details />} />
+              <Route path="/about" element={<About />} />
+            </Routes>
+          </div>
+          <CFooter />
+        </Container>
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

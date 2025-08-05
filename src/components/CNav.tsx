@@ -8,7 +8,7 @@ const CNav = ()=> {
         <>
         <Navbar bg="dark" data-bs-theme="dark">
         <Container >
-          <Navbar.Brand className='title' href="/">Void-g</Navbar.Brand>
+          <Navbar.Brand className='title' href="/"><img style={{width:"30px"}} src='public/logoSpace.png' alt='logo'className='me-2'/>Void-g</Navbar.Brand>
           <Nav className="ms-auto text">
             <Nav.Link as={NavLink} to="/">Home</Nav.Link>
             <Nav.Link as={NavLink} to="/about">About</Nav.Link>
