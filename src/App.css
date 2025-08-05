@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Major+Mono+Display&display=swap");
+
+.title {
+  font-family: "Major Mono Display", monospace;
+}
+
+.text {
+  font-family: "Google Sans Code", monospace;
+}
+#main {
+  background-image: url("src/assets/img/bg-texture.jpg");
+  background-size: cover;
+}
+.fixed-img {
+  height: 150px;
+  object-fit: cover;
+  width: 100%;
+}
+.card-shadow {
+  box-shadow: 5px 5px 16px 0px rgba(0, 0, 0, 0.43);
+  cursor: pointer;
+}
