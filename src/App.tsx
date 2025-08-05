@@ -6,6 +6,8 @@ import Main from './components/Main';
 import CFooter from './components/CFooter';
 import { Container } from 'react-bootstrap';
 import Hero from './components/Hero';
+import Details from './components/Details';
+import About from './components/About';
 
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
       <div id="main" className="flex-fill">
       <Routes>
         <Route path="/" element={<><Hero/><Main /></>} />
+        <Route  path="/details/:id" element={ <Details/>}/>
+        <Route path='/about' element={<About/>}/>
       </Routes></div>
       <CFooter/></Container>
     </BrowserRouter>

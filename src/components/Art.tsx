@@ -1,15 +1,17 @@
 import { Col, Card } from "react-bootstrap";
 import { Result } from "../types/Articles";
+import { useNavigate } from "react-router-dom";
 
 interface ArtProps {
   art: Result;
 }
 
 const Art= ({ art }: ArtProps)=> {
+  const navigate = useNavigate();
     return(
         <>
           <Col xs={6} md={3} key={art.id} className="mb-4 d-flex">
-                  <Card className="h-100 d-flex flex-column card-shadow">
+                  <Card className="h-100 d-flex flex-column card-shadow"  onClick={()=>{navigate(`/details/${art.id}`)}}>
                     <Card.Body className="d-flex flex-column">
                       <Card.Title className="text fs-6">{art.title}</Card.Title>
                       <Card.Text className="flex-grow-1">

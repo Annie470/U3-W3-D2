@@ -34,11 +34,11 @@ const Main = () => {
   return (
     <>
       <Container>
-        <Row>
+        <Row >
           {isLoading ? (
-            <Col xs={12} md={6}>
-              <Spinner animation="border" variant="success" />
-            </Col>
+            <> <Col className="text-center" xs={12}><Spinner animation="grow" size="sm" />
+      <Spinner animation="grow" /> <Spinner animation="grow" size="sm" />
+      <Spinner animation="grow" /><Spinner animation="grow" size="sm" /></Col></>
           ) : (
             <>
               {articles?.results.map((art) => (
