@@ -42,7 +42,7 @@ const Main = () => {
           ) : (
             <>
               {articles?.results.map((art) => (
-              <Art art={art}/>
+              <Art art={art} key={art.id}/>
               ))}
             </>
           )}
