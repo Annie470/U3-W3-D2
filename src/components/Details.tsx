@@ -60,7 +60,7 @@ const Details = () => {
                 <p className="text-muted">{new Date(article.published_at).toLocaleString().slice(0,10)}</p>
                 <p className="text">{article.news_site}</p>
                 <a href={article.url} target="_blank" rel="noopener noreferrer">
-                  <Button className="border-0 bg-dark">Browse article</Button>
+                  <Button className=" bg-dark no-r">Browse article</Button>
                 </a>
               </Col>
             </>
